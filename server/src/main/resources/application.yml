@@ -1,0 +1,9 @@
+
+
+eureka:
+  client:
+    #通过设置fetch-registry与register-with-eureka 表明自己是一个eureka服务
+    register-with-eureka: false
+    fetch-registry: false
+server:
+  port: 8761
