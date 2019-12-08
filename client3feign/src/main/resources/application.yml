@@ -1,0 +1,11 @@
+server:
+  port: 1113
+
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 5000
+        read-timeout: 500
+  hystrix:
+    enabled: true

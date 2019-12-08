@@ -5,10 +5,12 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/consul-service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/clenit4(rongduan)/pom.xml" />
         <option value="$PROJECT_DIR$/client2-fuwu-diaoyong/pom.xml" />
         <option value="$PROJECT_DIR$/server/client1/pom.xml" />
       </set>
