@@ -10,6 +10,8 @@
         <module>client2</module>
         <module>client3feign</module>
         <module>consul-water</module>
+        <module>client5hystrix</module>
+        <module>client6resillience4j</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

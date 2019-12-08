@@ -9,6 +9,8 @@
         <module name="client1" />
         <module name="client2" />
         <module name="client3feign" />
+        <module name="client5hystrix" />
+        <module name="client6resillience4j" />
         <module name="consul-service" />
         <module name="consul-water" />
         <module name="server" />
@@ -16,16 +18,20 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="clenit4rongduan" target="1.8" />
+      <module name="clent6stream" target="1.8" />
       <module name="client2-fuwu-diaoyong" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="clenit4rongduan" options="-parameters" />
+      <module name="clent6stream" options="-parameters" />
       <module name="client1" options="-parameters" />
       <module name="client2" options="-parameters" />
       <module name="client2-fuwu-diaoyong" options="-parameters" />
       <module name="client3feign" options="-parameters" />
+      <module name="client5hystrix" options="-parameters" />
+      <module name="client6resillience4j" options="-parameters" />
       <module name="consul-service" options="-parameters" />
       <module name="consul-water" options="-parameters" />
       <module name="parent" options="-parameters" />

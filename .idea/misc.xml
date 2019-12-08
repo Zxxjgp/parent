@@ -11,6 +11,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/clenit4(rongduan)/pom.xml" />
+        <option value="$PROJECT_DIR$/clent6stream/pom.xml" />
         <option value="$PROJECT_DIR$/client2-fuwu-diaoyong/pom.xml" />
         <option value="$PROJECT_DIR$/server/client1/pom.xml" />
       </set>

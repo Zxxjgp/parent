@@ -1,6 +1,7 @@
 server:
   port: 1113
 
+
 feign:
   client:
     config:
@@ -9,3 +10,13 @@ feign:
         read-timeout: 500
   hystrix:
     enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream, health, info
+  endpoint:
+    health:
+      show-details: always
+
