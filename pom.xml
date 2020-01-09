@@ -12,6 +12,9 @@
         <module>consul-water</module>
         <module>client5hystrix</module>
         <module>client6resillience4j</module>
+        <module>efft-java-study</module>
+        <module>resilience4j</module>
+        <module>config-server</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

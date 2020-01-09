@@ -1,0 +1,39 @@
+server:
+  port: 1117
+
+
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 500
+        read-timeout: 500
+  hystrix:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream, health, info
+  endpoint:
+    health:
+      show-details: always
+
+
+resilience4j:
+  circuitbreaker:
+    backends:
+      order:
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 5000
+        ring-buffer-size-in-closed-state: 5
+        ring-buffer-size-in-half-open-state: 3
+        event-consumer-buffer-size: 10
+      menu:
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 5000
+        ring-buffer-size-in-closed-state: 5
+        ring-buffer-size-in-half-open-state: 3
+        event-consumer-buffer-size: 10
+

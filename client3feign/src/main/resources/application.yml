@@ -1,6 +1,15 @@
 server:
   port: 1113
 
+  cloud:
+    config:
+      ####读取后缀
+      profile: pro
+      ####读取config-server注册地址
+      discovery:
+        service-id: config-server
+        enabled: true
+
 
 feign:
   client:
