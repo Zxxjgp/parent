@@ -15,6 +15,8 @@
         <module name="consul-service" />
         <module name="consul-water" />
         <module name="efftjavastudy" />
+        <module name="javademo" />
+        <module name="redission" />
         <module name="resilience4j" />
         <module name="server" />
         <module name="transaction-demo" />
@@ -40,7 +42,9 @@
       <module name="consul-service" options="-parameters" />
       <module name="consul-water" options="-parameters" />
       <module name="efftjavastudy" options="-parameters" />
+      <module name="javademo" options="-parameters" />
       <module name="parent" options="-parameters" />
+      <module name="redission" options="-parameters" />
       <module name="resilience4j" options="-parameters" />
       <module name="server" options="-parameters" />
       <module name="transaction-demo" options="-parameters" />
