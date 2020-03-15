@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/consul-service/pom.xml" />
         <option value="$PROJECT_DIR$/transaction-demo/pom.xml" />
         <option value="$PROJECT_DIR$/redission/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

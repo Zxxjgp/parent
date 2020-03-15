@@ -6,3 +6,5 @@
     
     docker pull zookerrper:3.5
     docker run --name zookeeper -p 2181:22181 -d zookeeper:3.5
+    
+**类里面的静态变量是共享的**

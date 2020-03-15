@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.MonthDay;
+import java.util.Objects;
 
 /**
  * @author jiaoguanping
@@ -21,9 +22,12 @@ public class DateTest {
         System.out.println(k);
         System.out.println("今天是：" + today);
         System.out.println("今天是现在的时间是：" + todayHours);
-
+        String sttr = "";
         LocalDate of = LocalDate.of(2020, 01, 15);
-
+        Test var1 = new Test();
+        Test var2 = new Test();
+        boolean equals1 = Objects.equals(var1, var2);
+        System.out.println(equals1);
         boolean equals = of.equals(today);
         System.out.println(equals);
 
