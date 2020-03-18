@@ -1,10 +1,11 @@
 package com.org.spring.transactiondemo.service.impl;
 
 import com.org.spring.transactiondemo.dao.TestMapper;
-import com.org.spring.transactiondemo.entity.DeviceEntity;
+import com.org.spring.transactiondemo.entity.TestEntity;
 import com.org.spring.transactiondemo.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -19,10 +20,13 @@ import java.util.List;
 public class TestServiceImpl implements TestService {
 
     @Autowired
+    private TestService testService;
+
+    @Autowired
     private TestMapper testMapper;
 
     @Override
-    public List<DeviceEntity> get() {
+    public List<TestEntity> get() {
         return testMapper.getTest();
     }
 
@@ -30,8 +34,14 @@ public class TestServiceImpl implements TestService {
     @Override
     public Integer insert(List<String> list) throws Exception {
         for (String str : list) {
-            testMapper.insert(DeviceEntity.builder().name(str).id("110").build());
+            testService.insertq(TestEntity.builder().name(str).id("110").build());
         }
-        throw new Exception();
+        return 0;
+    }
+
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    @Override
+    public void insertq(TestEntity p) {
+        testMapper.insert(p);
     }
 }

@@ -6,13 +6,15 @@ import lombok.Data;
 /**
  * @author jiaoguanping
  * @version 1.0.0
- * @ClassName DeviceEntity
+ * @ClassName
+ *
  * @date 2020/3/15  22:18
  */
 @Data
 @Builder
-public class DeviceEntity {
+public class TestEntity {
 
     private String id;
     private String name;
+    private String telNo;
 }

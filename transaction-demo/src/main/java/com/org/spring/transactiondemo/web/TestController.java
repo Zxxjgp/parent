@@ -1,6 +1,6 @@
 package com.org.spring.transactiondemo.web;
 
-import com.org.spring.transactiondemo.entity.DeviceEntity;
+import com.org.spring.transactiondemo.entity.TestEntity;
 import com.org.spring.transactiondemo.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,7 +24,8 @@ public class TestController {
     private TestService testService;
 
     @GetMapping("get")
-    public List<DeviceEntity> get() {
+    public List<TestEntity> get() {
+        List<TestEntity> testEntities = testService.get();
         return testService.get();
     }
 

@@ -1,6 +1,6 @@
 package com.org.spring.transactiondemo.service;
 
-import com.org.spring.transactiondemo.entity.DeviceEntity;
+import com.org.spring.transactiondemo.entity.TestEntity;
 
 import java.util.List;
 
@@ -12,7 +12,9 @@ import java.util.List;
  */
 public interface TestService {
 
-    List<DeviceEntity> get();
+    List<TestEntity> get();
 
     Integer insert(List<String> list) throws Exception;
+
+    void insertq(TestEntity p);
 }
