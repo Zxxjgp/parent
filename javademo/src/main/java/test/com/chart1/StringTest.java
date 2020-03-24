@@ -1,4 +1,4 @@
-package test.com;
+package test.com.chart1;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;

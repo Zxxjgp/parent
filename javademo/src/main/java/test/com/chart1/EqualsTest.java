@@ -1,4 +1,4 @@
-package test.com;
+package test.com.chart1;
 
 public class EqualsTest {
     public static void main(String[] args) {

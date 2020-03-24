@@ -1,11 +1,10 @@
 package com.org.spring.transactiondemo.web;
 
+import com.org.spring.transactiondemo.dto.vo.TestVO;
 import com.org.spring.transactiondemo.entity.TestEntity;
 import com.org.spring.transactiondemo.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,4 +37,9 @@ public class TestController {
         list.add("目前");
         return testService.insert(list);
     }
+    @PostMapping("va")
+    public TestVO valu(@RequestBody TestVO vo) {
+        return vo;
+    }
+
 }

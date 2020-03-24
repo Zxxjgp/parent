@@ -1,11 +1,10 @@
-package test.com;
+package test.com.chart1;
 
 /**
  * @author jiaoguanping
  * @version 1.0.0
- * @ClassName B
+ * @ClassName C
  * @date 2020/3/4  20:01
  */
-public interface B {
-    void get();
+public class C {
 }

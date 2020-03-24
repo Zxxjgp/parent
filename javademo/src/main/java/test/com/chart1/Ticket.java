@@ -1,4 +1,4 @@
-package test.com;
+package test.com.chart1;
 
 public class Ticket implements Runnable{
     private static int ticket=10;

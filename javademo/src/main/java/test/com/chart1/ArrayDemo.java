@@ -1,4 +1,4 @@
-package test.com;
+package test.com.chart1;
 
 import java.util.ArrayList;
 import java.util.List;
