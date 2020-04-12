@@ -1,4 +1,4 @@
-package com.org.spring.transactiondemo.desgin.状态模式;
+package com.org.spring.transactiondemo.study.状态模式;
 
 //具体状态类：优秀
 class HighState extends State

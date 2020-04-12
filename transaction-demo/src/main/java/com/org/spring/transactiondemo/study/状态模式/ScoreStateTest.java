@@ -1,4 +1,4 @@
-package com.org.spring.transactiondemo.desgin.状态模式;
+package com.org.spring.transactiondemo.study.状态模式;
 public class ScoreStateTest
 {
     public static void main(String[] args)

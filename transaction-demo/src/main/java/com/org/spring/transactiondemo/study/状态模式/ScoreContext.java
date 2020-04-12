@@ -1,4 +1,4 @@
-package com.org.spring.transactiondemo.desgin.状态模式;
+package com.org.spring.transactiondemo.study.状态模式;
 
 //环境类
 class ScoreContext
